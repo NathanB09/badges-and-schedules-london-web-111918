@@ -16,4 +16,10 @@ def assign_rooms(speakers)
   speakers.each do |name|
     room_assignments << "Hello, #{name}! You'll be assgined to room #{speakers.index(name) + 1}"
   end
+  room_assignments
+end
+
+def printer(speakers)
+  puts batch_badge_creator(speakers)
+  puts assign_rooms(speakers)
 end
